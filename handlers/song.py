@@ -34,7 +34,7 @@ ydl_opts = {
         'quite':True
 }
 
-
+"""
 @Client.on_message(command(["song", f"song@{bn}"]) & ~filters.edited)
 def song(_, message):
     query = " ".join(message.command[1:])
@@ -262,7 +262,7 @@ async def vsong(client, message):
         await msg.delete()
     except Exception as e:
         print(e)
-
+"""
 
 @Client.on_message(command(["lyric", f"lyric@{bn}"]))
 async def lyrics(_, message):
